@@ -1,65 +1,62 @@
 body {
     font-family: Arial;
     background: aliceblue;
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
 }
 
 header {
     width: 100%;
 }
+
 .banner {
     width: 100%;
-    margin: 0 auto;
-    height: 60px;
+    margin: auto; height: auto;
     image-resolution: from-image;
-    font-size: 48px;
-    text-align: center;
-    color: white;
+    text-align: center; color: white;
     background-image: url("banner.png");
 }
 
 nav {
-    height: 60px;
+    height: 100%;
     width: 100%;
-    margin: 10px 1% 0 1%;
+    margin: 10px;
     display: grid;
     grid-template-columns: 2fr 8fr;
 }
+
 .menu {
-    width: 900px;
-    margin:10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: block;
-    position: absolute;
+    width: 100%;
+    margin: 0; margin-left: 0; margin-right: 0;
+    display: block; position: absolute;
 }
-.menu li {
-    display:block;
-    border-radius: 5px;
-    width: 120px;
-    float:left;
-    margin: 15px;
-    height: 35px;
-    text-align: center;
-    list-style: circle;
-    list-style: '';
-    font-size: 16px;
-}
+
 .menu a {
-    display:block;
-    padding:3px;
-    text-decoration:none;
+    display: block;
+    padding: 0;
+    text-decoration: none;
     color:#009;
 }
+
+.menu li {
+    display:block;
+    border-radius: 0;
+    width: 100px;
+    float:left;
+    margin: 0; height: 1em;
+    text-align: center;
+    list-style: circle;
+}
+
 .menu li:hover {
     box-shadow: 0px 0px 20px blue;
     background-color: #2b65ec;
 }
+
 .logo {
     height: 100% ;
     width: 100% ;
 }
+
 .logo img {
     width: 30%;
     height: 85%;
@@ -68,133 +65,266 @@ nav {
 
 #main-heading {
     width: 100%;
-    margin: 10px 1% 0 1%;
-    height: 50px;
-    font-size: 40px;
+    margin: auto; height: auto;
     text-align: center;
-    border-radius: 10px;
-    font-family: "Segoe MDL2 Assets";
+    border-radius: 0.5em;
     background-color: #87afc7;
     color: black;
 }
 
-section {
-    float: left;
-    display: inline;
-    width: 65%;
-    margin: 1%;
-}
-
-#task h2 {
+#task h2, #requirements h2, #grading h2, #submission h2, #submission h3 {
     text-align: center;
     color: #151b54;
-}
-
-@media (min-width: 40rem) {
-    img {
-       float: left;
-       padding: 1rem;
-       max-width: 50%;
-       margin: 0 0 1rem 1rem;
-    }
-}
-
-
-#requirements {
-    margin: 3rem 0;
-    clear: both;
-}
-
-#requirements h2 {
-    text-align: center;
-    color: #151b54;
-}
-
-#submission {
-    float: left;
-    display: grid;
-    width: 45%;
-    height: 100%;
-}
-
-#submission h2, h3 {
-    text-align: center;
-    color: #151b54;
-}
-
-#submission img {
-    width: 100%;
-    height: 60%;
-    margin: 0;
-}
-#grading {
-    float: right;    
-    display: grid;
-    width: 45%;
-    height: 100%;
-}
-
-#grading h2 {
-    text-align: center;
-    color: #151b54;
-}
-
-aside {
-    float: left;
-    display: grid;
-    width: 25%;
-    margin: 1%;
-    background-color: #87afc7;
-    padding-left: 20px;
 }
 
 footer {
-    display: grid;
+    display: inline-block;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: lightsteelblue;
     width: 100%;
 }
+
 footer .contacts {
      text-align: center;
 }
+
 .categories li {
-    display:block;
-    border-radius: 5px;
-    width: 120px;
-    float:left;
-    margin: 10px;
-    height: 20px;
+    display: block;
+    border-radius: 0;
+    width: 100px;
+    float:left; margin: 0; height: 1em;
     text-align: center;
     list-style: circle;
-    list-style: '';
-    font-size: 15px;
+    font-size: 1em;
 }
+
 .categories a {
-    display:block;
-    padding:3px;
-    text-decoration:none;
-    color:#009;
-}
-.quick_links li {
-    display:block;
-    border-radius: 5px;
-    width: 120px;
-    float:left;
-    margin: 10px;
-    height: 20px;
-    text-align: center;
-    list-style: circle;
-    list-style: '';
-    font-size: 15px;
-}
-.quick_links a {
-    display:block;
-    padding:3px;
+    display: block;
+    padding:0;
     text-decoration:none;
     color:#009;
 }
 
 footer .contacts h5, .categories h5, .quick_links h5 {
      text-align: center;
-     font-size: 16px;
+     font-size: 1em;
+}
+
+.quick_links li {
+    display: block;
+    border-radius: 0;
+    width: 100px;
+    float:left; margin: 0; height: 1em;
+    text-align: center;
+    list-style: circle;
+    font-size: 1em;
+}
+
+.quick_links a {
+    display: block;
+    padding:0;
+    text-decoration:none;
+    color:#009;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+      font-size: 2em;
+  }
+
+  #main-heading {
+      font-size: 1.2em;
+  }
+
+  @media {
+      #task img {
+         width: 100%;
+         height: auto;
+         margin: auto;
+      }
+      #submission img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+      }
+  }
+
+  ::after {
+      content: '\A';
+      white-space: pre;
+  }
+}
+
+@media screen and ((min-width: 768px) and (max-width: 1023px)) {
+  .banner {
+      font-size: 4em;
+  }
+
+  #main-heading {
+      font-size: 1.4em;
+      text-align: center;
+  }
+
+  section {
+      float: left;
+      display: inline-block;
+      width: 65%;
+      margin: 1%;
+  }
+
+  #requirements {
+      margin: 0;
+      clear: both;
+  }
+
+  #submission {
+      float: left;
+      display: grid;
+      width: 50%;
+      height: 100%;
+  }
+
+  @media {
+      #submission img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+      }
+  }
+
+  #grading {
+      float: right;
+      display: grid;
+      width: 45%;
+      height: 100%;
+  }
+
+  @media (min-width: 40rem) {
+      img {
+         float: left;
+         padding: 1rem;
+         max-width: 50%;
+         margin: 0 0 1rem 1rem;
+      }
+  }
+
+  aside {
+      float: left;
+      display: grid;
+      width: 25%;
+      margin: 1%;
+      background-color: #87afc7;
+      padding-left: 20px;
+  }
+
+  ::after {
+      content: '\A';
+      white-space: pre;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+      font-size: 3em;
+  }
+
+  .menu {
+      margin: 10px; margin-left: 5%; margin-right: 5%;
+  }
+
+  .menu li {
+      border-radius: 5px;
+      width: 120px;
+      margin: 15px; height: 35px;
+  }
+
+  #main-heading {
+      width: 95%;
+      margin: 10px; height: 1.5em;
+      font-size: 2em;
+  }
+
+  section {
+      float: left;
+      display: inline-block;
+      width: 65%;
+      margin: 1%;
+  }
+
+  #requirements {
+      margin: 0;
+      clear: both;
+  }
+
+  #submission {
+      float: left;
+      display: grid;
+      width: 50%;
+      height: 100%;
+  }
+
+  @media {
+      #submission img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+      }
+  }
+
+  #grading {
+      float: right;
+      display: grid;
+      width: 50%;
+      height: 100%;
+  }
+
+  @media (min-width: 40rem) {
+      img {
+         float: left;
+         padding: 1rem;
+         max-width: 50%;
+         margin: 0 0 1rem 1rem;
+      }
+  }
+
+  aside {
+      float: left;
+      display: grid;
+      width: 25%;
+      margin: 1%;
+      background-color: #87afc7;
+      padding-left: 20px;
+  }
+
+  footer {
+      display: grid;
+  }
+
+  .categories li {
+      border-radius: 5px;
+      width: 120px;
+      float:left; margin: 10px; height: 20px;
+      font-size: 15px;
+  }
+
+  .categories a {
+      padding:3px;
+  }
+
+  .quick_links li {
+      border-radius: 5px;
+      width: 120px;
+      margin: 10px; height: 20px;
+      font-size: 15px;
+  }
+
+  .quick_links a {
+      padding:3px;
+      text-decoration:none;
+      color:#009;
+  }
+  
+  footer .contacts h5, .categories h5, .quick_links h5 {
+       font-size: 16px;
+  }
 }
