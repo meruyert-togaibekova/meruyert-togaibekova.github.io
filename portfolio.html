@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Meruyert Togaibekova</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  * {box-sizing: border-box}
+  body {font-family: serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Next & previous buttons */
+  .prev3, .next3 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next3 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev3:hover, .next3:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  article {
+      width: 88%;
+      border: 1px solid black;
+      padding: 10px;
+      margin: auto;
+  }
+
+  #article h1 {
+      color: black;
+      padding-left: 0;
+      margin: 0;
+      padding-top: 15px;
+  }
+
+  article p {
+    color: black;
+  }
+
+  article img {
+    width: 100%;
+    height: 100px;
+  }
+
+  /* The dots/bullets/indicators */
+  .bottomDots {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .bottomDots:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  #more {display: none;}
+
+  .showmore {
+    font-size: 1.1em;
+    margin-top: 1.5em;
+  }
+
+  .showmore .more, .showmore.show .dots {
+    display: none
+  }
+
+  .showmore.show .more {
+    display: inline
+  }
+
+  .showmore a {
+    cursor: pointer;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    float: right;
+  }
+  </style>
+</head>
+<body>
+  <script src="main.js"></script>
+  <div class="topnav">
+    <a href="#" class="split">
+      <img src="logo.png" alt="logo" width="50px" height="50px">
+    </a>
+    <a href="https://github.com/meruyert-togaibekova" target="_blank">
+      <img src="github.png" alt="logo" width="16px" height="16px">
+    </a>
+    <a href="https://www.linkedin.com/in/meruyert-togaibekova/" target="_blank">
+      <img src="linkedin.png" alt="logo" width="16px" height="16px">
+    </a>
+    <div class="dropdown">
+      <button class="dropbtn">More
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <a href="Meruyert_Togaibekova_CV.pdf" target="_blank">Resume</a>
+    <a href="index.html">Home</a>
+  </div>
+
+  <br><br><br><br><br>
+
+  <fieldset>
+    <legend style="font-size:8vw;"><strong>&nbsp;&nbsp;&nbsp;Portfolio</strong></legend>
+  </fieldset>
+
+  <div class="portfolio">
+    <h1>Visual Materials</h1>
+
+<div class="visual_materials">
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+      <div class="column">
+        <img src="img1.jpg" width="200px" height="270px" onclick="openModal1();currentSlide1(1)" class="hover-shadow">
+      </div>
+    <div class="column">
+      <img src="img2.jpg" width="200px" height="270px" onclick="openModal1();currentSlide1(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img3.jpg" width="200px" height="270px" onclick="openModal1();currentSlide1(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img4.jpg" width="200px" height="270px" onclick="openModal1();currentSlide1(4)" class="hover-shadow">
+    </div>
+  </div>
+
+  <!-- The Modal/Lightbox -->
+<div id="myModal1" class="modal">
+  <span class="close cursor" onclick="closeModal1()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides1">
+      <div class="numbertext">1 / 4</div>
+      <img src="img1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+      <div class="numbertext">2 / 4</div>
+      <img src="img2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+      <div class="numbertext">3 / 4</div>
+      <img src="img3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+      <div class="numbertext">4 / 4</div>
+      <img src="img4.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption1"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo1" src="img1.jpg" onclick="currentSlide1(1)" alt="Christmas">
+    </div>
+
+    <div class="column">
+      <img class="demo1" src="img2.jpg" onclick="currentSlide1(2)" alt="Festival">
+    </div>
+
+    <div class="column">
+      <img class="demo1" src="img3.jpg" onclick="currentSlide1(3)" alt="Break">
+    </div>
+
+    <div class="column">
+      <img class="demo1" src="img4.jpg" onclick="currentSlide1(4)" alt="BlackFriday">
+    </div>
+  </div>
+</div>
+</div>
+
+    <h1>Instagram Posts</h1>
+
+<div class="instagram_posts">
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+      <div class="column">
+        <img src="img5.jpg" width="270px" height="270px" onclick="openModal2();currentSlide2(1)" class="hover-shadow">
+      </div>
+    <div class="column">
+      <img src="img6.jpg" width="270px" height="270px" onclick="openModal2();currentSlide2(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img7.jpg" width="270px" height="270px" onclick="openModal2();currentSlide2(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img8.jpg" width="270px" height="270px" onclick="openModal2();currentSlide2(4)" class="hover-shadow">
+    </div>
+  </div>
+
+  <!-- The Modal/Lightbox -->
+<div id="myModal2" class="modal">
+  <span class="close cursor" onclick="closeModal2()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides2">
+      <div class="numbertext">1 / 4</div>
+      <img src="img5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">2 / 4</div>
+      <img src="img6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">3 / 4</div>
+      <img src="img7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">4 / 4</div>
+      <img src="img8.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption2"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo2" src="img5.jpg" onclick="currentSlide2(1)" alt="News Post">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="img6.jpg" onclick="currentSlide2(2)" alt="Don't Forget to Fall Back">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="img7.jpg" onclick="currentSlide2(3)" alt="Clean and Chic">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="img8.jpg" onclick="currentSlide2(4)" alt="Pray for Ukraine">
+    </div>
+  </div>
+</div>
+</div>
+
+    <h1>Sample works</h1>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides3 fade">
+      <article id="article">
+        <h1>What is Influencer Marketing?</h1>
+        <p class="showmore">Influencer marketing is now a mainstream form of
+          online marketing. It has been a buzzword for a while now, and the
+          mainstream media regularly refers to it. Yet, there are still
+          people who don't really understand what influencer marketing is
+          all about. Indeed, some people come across the phrase for the first
+          time and instantly ponder, "What is influencer marketing?"
+          <span class="dots">...</span><span class="more"><br><br>Influencer marketing involves a brand collaborating with an online
+              influencer to market one of its products or services. Some influencer
+              marketing collaborations are less tangible than that – brands simply
+              work with influencers to improve brand recognition.
+            <br><br>An early example of influencer marketing involved YouTube celebrity
+              PewDiePie. He teamed up with the makers of a horror film set in the
+              French catacombs under Paris, creating a series of videos in which
+              he underwent challenges in the catacombs. It was pitch-perfect content
+              for PewDiePie's 111 million subscribers and received nearly double the
+              views as the movie's trailer. Everybody won.<br><br>
+              That's a simple example. It's easy to imagine a celebrity teaming with a company
+              to pitch a product—even if the pitch is a series of 10-minute videos instead of a 30-second television ad.<br><br>
+              But people wouldn't be talking about influencer marketing—you wouldn't be at a website called the
+              Influencer Marketing Hub reading about it, either—if it didn't have a much broader set of applications.
+              And the key is in that word, influencer.<br><br>
+              Influencers, unlike celebrities, can be anywhere. They can be anyone. What makes them influential
+              is their large followings on the web and social media. An influencer can be a popular fashion
+              photographer on Instagram, or a well-read cybersecurity blogger who tweets, or a respected marketing
+              executive on LinkedIn. Within any industry, there are influential people—you just have to find them.
+              Some will have hundreds of thousands (if not millions) of followers. But many will seem more like
+              ordinary people. They may only have 10,000 followers, less in some cases. Yet, they will have developed
+              a reputation for being the experts in their field. They are the go-to people who provide the answers to
+              people's questions. Depending on their sphere of expertise, they are the people who make the most
+              engaging social posts on their specialist topics. They share the best pictures, make the most
+              entertaining videos, and run the most informative online discussions.<br></span>
+          <a>Show More</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="mySlides3 fade">
+      <article id="article">
+        <h1>Email Marketing: The #1 Ridiculously Easy Way To Grow Your Business</h1>
+        <p class="showmore">Email marketing is a type of direct marketing that uses
+          personalized emails to educate your email list about your product or services.
+          It can also be used to convince your email list to take a specific action like
+          making a purchase, booking a demo, signing up for a trial or registering for an event.
+          <span class="dots">...</span><span class="more">
+            <br><br>It is a highly effective digital marketing strategy. Effective email marketing
+            convert prospects into customers, and turns one-time buyers into repeat customers
+            and raving fans. Email marketing is the most direct and effective way of connecting
+            with your leads, nurturing them, and turning them into customers, consistently
+            winning out over all other marketing channels.<br><br>
+            There are many reasons you should make email marketing one of your top priorities, but here are the top 3:<br><br>
+            1. Email is the #1 communication channel. Did you know that at least 99% of consumers check their
+            email on a daily basis? That can’t be said of any other communication channel.<br><br>
+            2. You own your list. On any social media platform, your account (along with all your fans and
+            posts) could be suspended or deleted at any time, for any reason, without notice. However,
+            you own your email list. No one can take those leads away from you.<br><br>
+            3. Email just converts better. People who buy products marketed through email spend
+            138% more than those who do not receive email offers. In fact, email marketing has an
+            ROI (returns on investment) of 4400%. That’s huge! And if you are wondering if social
+            media converts even better, think again: the average order value of an email is at least
+            three times higher than that of social media.<br></span>
+          <a>Show More</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="mySlides3 fade">
+      <article id="article">
+        <h1>How to Build Your Brand Identity in 5 Steps</h1>
+        <p class="showmore">Brand marketing is a way of promoting your product
+          by shaping perceptions of your company’s overall brand. This often
+          involves defining your company’s mission, story, brand voice, and design.
+          <span class="dots">...</span><span class="more">
+            <br><br>With a poor brand, customers won’t want any affiliation with your company.
+            They might see your product as not being worth their money, or worse, a scam.
+            But done well, good branding does the opposite—it makes your product desirable,
+            with customers naturally spreading the word and even lining up for more from your business.
+            <br>From your company name to its tagline and more, there are a lot of components to branding.
+            Companies shouldn’t get bogged down in the details, though. Instead, we advise focusing
+            on these four foundational elements: <br><br>1. Mission statement <br>2. Brand story <br>3. Brand voice <br>4. Brand design <br><br>
+            1. Mission statement <br> Your company’s mission statement is a short description
+            (usually no more than one sentence) of its main goals. It serves both an external and internal purpose: <br>
+            - Externally, it communicates what your company cares about to better relate to customers. <br>
+            - Internally, it guides strategic decisions about your product, business model, ideal audience,
+            and acquisition channels.</span>
+          <a>Show More</a>
+        </p>
+      </article>
+    </div>
+
+    <a class="prev3" onclick="plusSlides3(-1)">❮</a>
+    <a class="next3" onclick="plusSlides3(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="bottomDots" onclick="currentSlide3(1)"></span>
+      <span class="bottomDots" onclick="currentSlide3(2)"></span>
+      <span class="bottomDots" onclick="currentSlide3(3)"></span>
+    </div>
+
+   <br><br>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer">
+          <p>
+            <a href="mailto:meruyert.togaibekova@nu.edu.kz" class="email">
+              meruyert.togaibekova@nu.edu.kz
+            </a>
+            &nbsp;| &nbsp;Nur-Sultan, Kazakhstan
+          </p>
+      </div>
+    </footer>
+    <script>
+    let slideIndex3 = 1;
+    showSlides3(slideIndex3);
+
+    function plusSlides3(n) {
+      showSlides3(slideIndex3 += n);
+    }
+
+    function currentSlide3(n) {
+      showSlides3(slideIndex3 = n);
+    }
+
+    function showSlides3(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides3");
+      let dots = document.getElementsByClassName("bottomDots");
+      if (n > slides.length) {slideIndex3 = 1}
+      if (n < 1) {slideIndex3 = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex3-1].style.display = "block";
+      dots[slideIndex3-1].className += " active";
+    }
+
+    document.querySelectorAll(".showmore").forEach(function (p) {
+      p.querySelector("a").addEventListener("click", function () {
+        p.classList.toggle("show");
+        this.textContent = p.classList.contains("show") ? "Show Less" : "Show More";
+      });
+    });
+
+    </script>
+
+</body>
+</html>

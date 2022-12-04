@@ -4,319 +4,125 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Design</title>
-  <link rel="stylesheet" href="style1.css">
+  <title>Meruyert Togaibekova | Nazarbayev University</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="banner">Web Programming...</div>
-  </header>
-
-  <!-- Navbar -->
-  <nav>
-      <a class="logo" href="#">
-        <img src="logo.png" alt="logo" width="80px" height="80px">
+  <div class="main-image">
+    <div class="main-container">
+      <div class="topnav">
+      <a href="#" class="split">
+        <img src="logo.png" alt="logo" class="resp_images" width="50px" height="50px">
       </a>
-      <ul class="menu">
-        <li><a class="active" href="#task">Task</a></li>
-        <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#submission">Submission</a></li>
-        <li><a href="#grading">Grading</a></li>
-        <li><a href="#deadline">Deadline</a></li>
-        <li><a href="#">SignIn</a></li>
-      </ul>
-    </nav>
-
-  <!-- Main Content -->
-  <section class="main_content">
-    <h1 id="main-heading" class="topic">
-      Lab 4 - Designing with CSS
-    </h1>
-    <hr>
-    <article id="task">
-      <h2 >Task</h2>
-      <p>
-        <img src="nature.png" alt="" width="300px" height="210">
-        As you have alredy learned in the last lecture,
-        CSS is about the presentation of the documents
-        like HTML or XML.
-        So, in this lab assignment you need to form a group of two people and then together apply
-        CSS styling rules to make this template HTML file look
-        beautiful and interesting.
-      </p>
-      <p>
-        There are no
-        limits to what techniques you use and how you
-        ultimately solve this task.
-        However, there are some minimal requirements
-        which are explained in the next section below.
-        <a href="#requirements">Next...</a>
-      </p>
-    </article>
-    <article id="requirements">
-      <h2 >Requirements</h2>
-      <p>
-
-        The main requirement for this task is to
-        style this HTML document without any
-        changes (including adding new and deleting the existing elements) to itself except for these cases:
-        <ul>
-          <li>
-            You can add <strong>id</strong>
-            and <strong>class</strong>
-            attributes to the ncessary elements.
-            </li>
-            <li>
-            You can replace the
-            images in the defined elements within this document with your
-            own ones.
-            </li><li>
-            Notice that there is a place for a
-            large banner on the top of the page,
-            you <strong>must</strong> place an image there only using CSS.
-            </li>
-            <li>
-              You <strong>must</strong> write your names in the specified fields below.
-            </li>
-            <li>You can change the location
-              of in the map below or replace it with the image.
-            </li>
-        </ul>
-      </p>
-      <p>
-        In your stylesheet you <strong>must</strong>
-         use these selectors:
-        <ul>
-          <li>Element selectors;</li>
-          <li>Class selectors;</li>
-          <li>Attribute selectors;</li>
-          <li>ID selectors.</li>
-          <li>Pseudo-class selectors.</li>
-        </ul>
-      </p>
-      <p>
-        Also, you <strong>must</strong>
-        use the necessary CSS properties
-        and demonstrate the following changes
-        of the elements:
-        <ul>
-          <li>font and background colors;</li>
-          <li>font family and size;</li>
-          <li>margin, padding and borders;</li>
-          <li>image sizes (width and height);</li>
-          <li>text alignment (horizontal and vertical);</li>
-        </ul>
-        Additionally, a special focus <strong>must</strong>
-        be done to the menu links.
-        They need to change their status appropriately
-        (active, hover, visited)
-        as well as be placed in a natural way,
-        i.e. horizontally or vertically.
-        <a href="#submission">Next...</a>
-      </p>
-    </article>
-    <article id="submission">
-      <h2>Submission</h2>
-      <p>
-       As usual, you <strong>must</strong> submit
-       your work via Github. All the files and images need to go to
-       your <strong> <i>username.github.io</i> </strong>repository.
-       Also, this page must be available
-       through this domain name.
-      </p>
-      <h3>Group</h3>
-      <p>
-        Since this is a group project, i.e. a team of two members,
-        it is required to insert a photo of your group
-        in this <strong>&lt;img&gt;</strong> element and write your names in the
-        following list items. <br>
-         <img src="planets.jpg" alt="" width="300px" height="210">
-
-        <ul>
-          <li>Meruyert Togaibekova</li>
-          <li>Gulnur Suleimenova</li>
-        </ul>
-        Also, to submit your group members,
-        please fill in the this
-        <a href="#">Google Sheet</a> form.
-        <a href="#grading">  Next...</a>
-      </p>
-    </article>
-    <article id="grading">
-      <h2>Grading</h2>
-      For this assignment you will get
-      <strong>80 points</strong>  in total.
-      The final score is the sum of the points
-      for each of the criteria below.
-      This score will be the same for both
-      of the team members.
-      <table>
-        <tr>
-          <th>Criteria</th>
-          <th>Points</th>
-        </tr>
-        <tr>
-          <td>Group is formed </td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>CSS file is linked to the document</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Banner image is present</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Menu is styles appropriately</td>
-          <td>5 pts</td>
-        </tr>
-
-        <tr>
-          <td>Group photo is present </td>
-          <td>5 pts</td>
-        </tr>
-         <tr>
-          <td>HTML file is unchanged</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Required selectors are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Required CSS properties are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website is available online</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website looks nice and not broken</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Extra cool stuff is used</td>
-          <td>5 pts</td>
-        </tr>
-        </tr>
-      </table>
-    </article>
-  </section>
-
-  <!-- Aside Information -->
-  <aside>
-    <h3>Important</h3>
-    <section class="aside_content">
-      <article id="deadline">
-        <h4>Deadlines:</h4>
-        There are two deadlines - one for
-        forming a group and the other is for the
-        submission of the assignment itself.
-        <ul>
-          <li>Group: Sep. 9, 2022, 23:59</li>
-          <li>Submission: Sep. 18, 2022, 23:59</li>
-        </ul>
-        <p>
-        Missing the deadline for the group formation will result in
-        <strong> not getting any points</strong> for the corresponding criteria. <br>
-        </p>
-        <p>And, as usual, missing the deadline for submittion of your work will result in reduction of your score by 50%.</p>
-
-        <a href="#">More...</a>
-      </article>
-      </section>
-
-        <h3>Some Dummy Content</h3>
-       <section>
-        <article>
-        <h4>Article 1</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Odit, fugiat eveniet!
-          Optio quia perspiciatis earum ipsa dicta
-          porro dolorum facere laudantium repellat
-          ad necessitatibus asperiores dolor, molestias
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article>
-        <h4>Article 2</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Odit, fugiat eveniet!
-          Optio quia perspiciatis earum ipsa dicta
-          porro dolorum facere laudantium repellat
-          ad necessitatibus asperiores dolor, molestias
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article>
-        <h4>Article 3</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Odit, fugiat eveniet!
-          Optio quia perspiciatis earum ipsa dicta
-          porro dolorum facere laudantium repellat
-          ad necessitatibus asperiores dolor, molestias
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-    </section>
-  </aside>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="contacts">
-      <div >
-        <h5>Contacts</h5>
-        <p>
-          Nazarbayev University <br>
-          53 Kabanbay Batyr ave. <br>
-          Block 7, Room 7.422 <br>
-          Ph.: +7-7172-123-4567 <br>
-          <a href="mailto:info@naturallyinspired.com" class="email">
-            info@naturallyinspired.com
-          </a>
-        </p>
+      <a href="https://github.com/meruyert-togaibekova/" target="_blank">
+        <img src="github.png" alt="logo" class="resp_images" width="16px" height="16px">
+      </a>
+      <a href="https://www.linkedin.com/in/meruyert-togaibekova/" target="_blank">
+        <img src="linkedin.png" alt="logo" class="resp_images" width="16px" height="16px">
+      </a>
+      <div class="dropdown">
+        <button class="dropbtn">More
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="about.html">About Me</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
-      <div class="map">
-          <iframe src="https://maps.google.com/maps?q=Nazarbayev%20university,%20Nur-Sultan&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-          </iframe>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="Meruyert_Togaibekova_CV.pdf" target="_blank">Resume</a>
+    </div>
+    <div class="main-text">
+      <h1>Meruyert Togaibekova</h1>
+      <p>Social Media Manager</p>
+      <p>and Content Creator</p>
+    </div>
+  </div>
+</div>
+
+    <br><br> <br> <br> <br>
+
+    <br><br>
+
+    <fieldset>
+      <legend style="font-size:8vw;"><strong>&nbsp;&nbsp;&nbsp;This is Me</strong></legend>
+    </fieldset>
+
+    <div class="thisIsMe">
+        <p>
+          Diversity is what inspires my work.
+          My inspiration comes from a melting pot of varied sources: from
+          famous artists such as Andy Warhol to mixed cultures, video games,
+          and more. I can adapt to any role and environment. I embrace
+          challenges and welcome individuality.
+        </p>
+        <br><br><br>
+        <div class="keywords">
+          <span><mark>&nbsp;Copy Writing&nbsp;</mark>Content Strategy<mark>&nbsp;Advertising&nbsp;</mark></span>
+          <br>
+          <span>Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mark>&nbsp;Influencer Marketing&nbsp;</mark>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEO</span>
+          <br>
+          <span><mark>&nbsp;Branding&nbsp;</mark>&nbsp;&nbsp;Social Media&nbsp;<mark>&nbsp;&nbsp;Email Marketing&nbsp;<mark></span>
+          <br>
+          <span>Research&nbsp;&nbsp;<mark>&nbsp;Data Analysis&nbsp;</mark>&nbsp;&nbsp;Digital Marketing</span>
+          <br>
+        </div>
+        <br><br><br>
+        <div class="thisIsMeBtns">
+          <button type="submit" class="btns" onclick="window.open('Meruyert_Togaibekova_CV.pdf')">See Full Resume</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btns" onclick="window.location.href='portfolio.html';">See Portfolio</button>
+        </div>
+    </div>
+
+    <div class="divider">
+      <div class="horizontal boxBlock">
+        <img src="boxBlock.png" alt="boxBlock" width="100%" height="160px">
+      </div>
+      <div class="horizontal box"></div>
+    </div>
+
+    <div class="iAm">
+      <div class="vertical info">
+        <h1>I create engaging content and empower companies with creative strategies</h1>
+        <p>I have created a happy marriage of creativity and data analytics. I do more
+        than construct beautiful copy - I study, measure, and continuously improve upon
+        it. Exceptional strategies are rooted in ingenuity and are vouched for by compelling data.</p>
+        <p>When presented with challenges, I do not back down. I try to learn and adapt until I
+        can produce high-quality results. To offer a more diverse portfolio of my capabilities,
+        I am acquiring experience in a wide variety of fields. Some of my acquired knowledge
+        includes graphic design, video editing, professional photography - and you can help me
+        add to this list.</p>
+        <p>When working with me, you can expect consistently improving results. Contact me and
+        schedule an interview to learn more about what I can do for your company and you.</p>
+        <br>
+        <div class="thisIsMeBtns">
+          <button class="btns" onclick="window.location.href='about.html';">More About Me</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btns" onclick="window.location.href='contact.html';">Get in Touch</button>
+        </div>
+      </div>
+      <div class="vertical vbox"></div>
+      <div class="vertical block">
+        <img src="block.jpeg" alt="block" width="652%" height="400px">
       </div>
     </div>
-    <div class="categories">
-      <h5>Top 10 Categories</h5>
-      <ul>
-        <li><a href="#">Category 1</a></li>
-        <li><a href="#">Category 2</a></li>
-        <li><a href="#">Category 3</a></li>
-        <li><a href="#">Category 4</a></li>
-        <li><a href="#">Category 5</a></li>
-        <li><a href="#">Category 6</a></li>
-        <li><a href="#">Category 7</a></li>
-        <li><a href="#">Category 8</a></li>
-        <li><a href="#">Category 9</a></li>
-        <li><a href="#">Category 10</a></li>
-      </ul>
-    </div>
-    <div class="quick_links">
-      <h5>Quick Links</h5>
-      <ul>
-        <li><a href="#">Item1</a></li>
-        <li><a href="#">Item2</a></li>
-        <li><a href="#">Item3</a></li>
-        <li><a href="#">Item4</a></li>
-        <li><a href="#">Item5</a></li>
-        <li><a href="#">Item6</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer">
+            <p>
+              <a href="mailto:meruyert.togaibekova@nu.edu.kz" class="email">
+                meruyert.togaibekova@nu.edu.kz
+              </a>
+              &nbsp;| &nbsp;Nur-Sultan, Kazakhstan
+            </p>
+        </div>
+      </footer>
+
+
+    <script src="main.js"></script>
+  </body>
 </html>
